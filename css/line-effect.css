@@ -1,0 +1,153 @@
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+@-webkit-keyframes fadeAllIn {
+	0%, 50% { opacity: 0; -webkit-transform: translate3d(0, 10px,0); transform: translate3d(0, 10px,0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+
+@keyframes fadeAllIn {
+	0%, 50% { opacity: 0; -webkit-transform: translate3d(0, 30px,0); transform: translate3d(0, 30px,0); }
+	100% { opacity: 1; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+/* Individual demo styles */
+
+.aelo-body {
+	color: #333;
+	height: 100vh;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+.aelo-body::after {
+	content: '';
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* Header */
+
+.aelo-body .codrops-header  {
+	padding-top: 1%;
+	text-align: center;
+	position: absolute;
+	width: calc(80vw - 5px);
+	top: 15vh;
+	left: 10vw;
+	height: calc(70vh - 5px);
+	margin: 5px 0 0 5px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-transform: translate3d(0,100px,0);
+	transform: translate3d(0,100px,0);
+	-webkit-animation: fadeIn 2s ease-out forwards;
+	animation: fadeIn 2s ease-out forwards;
+}
+
+@-webkit-keyframes fadeIn {
+	0%, 40% { opacity: 0; }
+	85%, 100% { opacity: 1; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+
+@keyframes fadeIn {
+	0%, 40% { opacity: 0; }
+	85%, 100% { opacity: 1; -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0); }
+}
+
+.codrops-header__title {
+	margin: 0;
+	padding: 0 0 0.15em 0;
+	font-size: 9vw;
+	text-transform: uppercase;
+	line-height: 1;
+	font-weight: normal;
+}
+
+.aelo-body .codrops-header__title {
+	font-family: 'Kaushan Script', cusrive;
+	text-transform: none;
+	font-size: 14vw;
+	color: #fdfdff;
+	margin: 0;
+	/* padding: 0 0 0.35em; */
+}
+
+
+/* Decorative Lines */
+
+.decolines {
+	pointer-events: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+}
+
+.decolines--fixed {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+.decoline {
+	position: absolute;
+}
+
+
+@media screen and (min-width: 50em) {
+
+	.actions {
+		width: 14.5vw;
+		margin: 2em 0 0 19vw;
+		position: absolute;
+	}
+	.content--grid p {
+		margin: 0 0 2em;
+		width: 20%;
+		margin-left: 10%;
+		text-align: right;
+		position: relative;
+	}
+	.content--grid p:nth-child(odd) {
+		margin-left: 50%;
+		text-align: left;
+	}
+	.content--grid p:nth-child(3n) {
+		margin-left: 70%;
+		text-align: left;
+	}
+
+}
+
+@media screen and (max-width: 50em) {
+	.codrops-header {
+		padding: 1em;
+	}
+
+	.aelo-body::after {
+		border-width: 10px;
+	}
+
+	.dummy {
+		padding: 10px 15% 0 15%;
+	}
+	.dummy__icon {
+		width: calc(10vw - 10px);
+	}
+}

@@ -1,0 +1,95 @@
+/*
+*
+*	
+*	E-dreamz 2014
+*	
+*
+*/
+
+/* -- HTML Element Defaults -- */
+html, body{border:0;margin:0;padding:0;}
+body{font-family:Arial, Helvetica, sans-serif; font-size:12px; color:#000;}
+
+a{text-decoration: none; outline:none;}
+a:hover{text-decoration: underline;}
+a img{border: none;}
+
+p{margin:0; padding:0 0 15px 0;}
+
+h1, h2, h3, h4, h5, h6{margin:0; padding:0 0 10px;}
+
+ul, ol {margin:0; padding:0 0 10px 40px;}
+
+input,label, select{vertical-align:middle;}
+label{font-weight: bold;}
+
+hr{height:1px; border:0; color:#fff; background-color:#ccc; margin:20px 0; display:block;}
+
+img{max-width: 100%; display:block;}
+
+blockquote{margin:22px 40px; padding:0;}
+
+small{font-size:0.85em;}
+
+/* -- Global Classes -- */
+.clear{clear:both;}
+* html .clearafter, * html .clear{height: 1px;}
+.clearafter:after, .clear:after {content: ".";  display: block;  height: 0;  clear: both;  visibility: hidden;}
+
+.hidden{display:block !important; border:0 !important; margin:0 !important; padding:0 !important; font-size:0 !important; line-height:0 !important; width:0 !important; height:0 !important; overflow:hidden !important;}
+
+.float-left{float:left;}
+.float-right{float:right;}
+.float-clear{float:none;}
+
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.text-center{text-align:center;}
+.text-justify{text-align:justify;}
+
+.bold{font-weight:bold;}
+.italic{font-style:italic;}
+.underline{border-bottom:1px solid;}
+.highlight{background:#ffc;}
+
+.img-left{float:left;margin:4px 10px 4px 0;}
+.img-right{float:right;margin:4px 0 4px 10px;}
+
+.nopadding{padding:0;}
+.noindent{margin-left:0;padding-left:0;}
+.nobullet{list-style:none;list-style-image:none;}
+.noborder{border: none;}
+.nobackground{background:none;}
+
+.bgreplace{text-indent: -9999em; position: relative;}
+.bgreplace a{position: absolute; display:block; top: 0; left: 0;}
+
+.white{color:#FFF !important;}
+.black{color:#000 !important;}
+.red{color:#E31B0C !important;}
+.green{color:#75B554 !important;}	
+.blue{color:#37A0D0 !important;}
+.orange{color:#FF6600 !important;}
+
+.bg-white{background:#FFF !important;}
+.bg-black{background:#000 !important;}
+.bg-red{background:#E31B0C !important;}
+.bg-green{background:#75B554 !important;}	
+.bg-blue{background:#37A0D0 !important;}
+.bg-orange{background:#FF6600 !important;}
+
+.marg-right{margin-right: 10px;}
+.marg-left{margin-left: 10px;}
+
+.msg{margin:0 0 15px; border-radius: 5px; font-size: 14px; font-weight: bold;}
+.msg .msg-head{padding:8px 8px 8px 40px; height: 22px; color: #FFF; font: bold 20px Arial, Helvetica, sans-serif;}
+.msg ul{margin: 15px 20px 0;}
+.msg ul li{margin:0 0 10px; padding: 0;}
+.msg.error{border:1px solid #E31B0C; color: #E31B0C; background: #FFD2D2;}
+.msg.error .msg-head{background:#E31B0C url(/images/admin/svg/icon-bug.svg) left 10px center no-repeat;}
+.msg.success{border:1px solid #75B554; color: #75B554; background: #dfffdd;}
+.msg.success .msg-head{background:#75B554 url(/images/admin/svg/icon-smile.svg) left 10px center no-repeat;}
+.msg.alert{border:1px solid #FF6600; color: #FF6600; background: #fddfbb;}
+.msg.alert .msg-head{background:#FF6600 url(/images/admin/svg/icon-alert.svg) left 10px center no-repeat;}
+.msg.info{border:1px solid #37A0D0; color: #37A0D0; background: #d7e9ff;}
+.msg.info .msg-head{background:#37A0D0 url(/images/admin/svg/icon-info.svg) left 10px center no-repeat;}
